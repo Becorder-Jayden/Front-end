@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
-    <body>
+    <>
         <!-- Navbar -->
         <nav id="navbar"
             <div class="navbar__logo">
@@ -38,7 +38,7 @@
         </nav>
         
         <!-- Home -->
-        <secton id="home">
+        <section id="home">
             <img 
                 src="imgs/profile.png" 
                 alt="Jayden's profile photo" 
@@ -49,10 +49,11 @@
                 A Software Engineer currently residing in Seoul, South Korea
             </h2>
             <button class="home__contanct">CONTACT ME</button>
-        </secton>
+        </section>
 
         <!-- About -->
-        <section id="about">
+        <section id="about" class="section">
+            <div class="section__container">
             <h1>About me</h1>
             <p>
                 나는 모닥불 같은 개발자다. 
@@ -62,28 +63,62 @@
                 사람들에게 도움이 되는 프로그램을 만들고 싶다. 
             </p>
             <div class="about__majors">
-                <div class="major">
+                <div class="major1">
                     <div class="major__icon">
                         <i class="far fa-chart-bar"></i>
                     </div>
-                    <div class="major__title">Data Analyse</div>
+                    <div class="major__title">
+                        Data Analyse
+                    </div>
                     <div class="major__description">
                         <br/> Python, QGIS, Excel
                     </div>
                 </div>
+
+                <div class="major2">
+                    <div class="major__icon">
+                        <i class="far fa-chart-bar"></i>
+                    </div>
+                    <div class="major__title">
+                        Data Analyse
+                    </div>
+                    <div class="major__description">
+                        <br/> Python, QGIS, Excel
+                    </div>
+                </div>
+
+                <div class="major3">
+                    <div class="major__icon">
+                        <i class="far fa-chart-bar"></i>
+                    </div>
+                <div class="major__title">
+                    Data Analyse
+                </div>
+                <div class="major__description">
+                    <br/> Python, QGIS, Excel
+                </div>
+            </div>
             </div>
 
             <div class="about__jobs">
                 <div class="job">
-                    <img src="imgs/logo-kbbank.png" alt="kb_bank" class="job__logo">
-                    <p class="job__name">
-                    </p>
-                    <p class="job__description">
-                    </p>
+                    <img 
+                        src="imgs/logo-kbbank.png" 
+                        alt="kb_bank" 
+                        class="job__logo"/>
+                    <div class="job__desciption">
+                        <p class="job__name">
+                            Currently working at samsung as Software engineer
+                        </p>
+                        <p class="job__period">
+                            2029 Sept - until 2020
+                        </p>
+                    </div> 
                 </div>
                 <div class="job">
                 </div>
-            </>
+            </div>
+            </div>
         </section>
         
         <!-- Skills -->
@@ -97,43 +132,34 @@
                 <div class="skillset_left">
                     <h3 class="skillset__title">Skills</h3>
                     <div class="skill">
-                        <div class="skill_descrription">
+                        <div class="skill__description">
                             <span>HTML</span>
                             <span>99%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width: 99%"></div>
                         </div>
+                    </div>
                     <div class="skill">
-                        <div class="skill_descrription">
+                        <div class="skill__description">
                             <span>CSS</span>
-                            <span>99%</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
                         </div>
                     </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     <div class="skill">
-                        <div class="skill_descrription">
+                        <div class="skill__description">
                             <span>JavaScript</span>
-                            <span>99%</span>
+                            <span>65%</span>
                         </div>
-                    </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width: 65%"></div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill_descrription">
-                            <span>Python</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skll__bar">
-                            <div class="skill__value"></div>
-                        </div>
-                    </div>
+                    </div>  
                 </div>
-            
+           
                 <div class="skillset__right">
                     <div class="tools">
                         <h3 class="skillset__title">Tools</h3>
@@ -154,6 +180,7 @@
                         </ul>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- Work -->
