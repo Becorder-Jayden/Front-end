@@ -164,10 +164,10 @@ p {
 }
 
 /* Section common */
-section {
+.section {
   padding: 50px;
   text-align: center;
-  margin: auto;
+  margin: center;
 }
 
 .section__container {
@@ -179,6 +179,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
+  
 }
 
 .major__icon {
@@ -203,11 +204,11 @@ section {
 }
 
 .major__title,
-major__description {
+.major__description {
   color: var(--color-dark-grey);
 }
 
-.mojor__description {
+.major__description {
   font-size: var(--font-small);
 }
 
@@ -232,6 +233,11 @@ major__description {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+.job__logo {
+  height: 100px;
+  margin: 40px;
 }
 
 /* Skill */
@@ -342,7 +348,7 @@ major__description {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-grey);
+  background-color: var(--color-light-white);
 }
 
 .project__img {
@@ -384,4 +390,67 @@ major__description {
   margin-left: -12px;
   margin-top: 8px;
   background-color: blue;
+}
+
+/* Testimonial */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px 0;
+}
+
+.testimonial__avartar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.testimonial__avartar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avartar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-pink);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-green-yellow);
+}
+
+.contact__title, .contact__email, .contact__rights {
+  color: var(--color-white)
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);  
 }
