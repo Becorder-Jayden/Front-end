@@ -99,12 +99,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(114, 195, 72);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(114, 195, 72);
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .navbar__menu {
@@ -148,8 +156,8 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .home__avatar {
