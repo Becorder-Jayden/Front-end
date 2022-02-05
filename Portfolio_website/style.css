@@ -107,6 +107,7 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -182,20 +183,19 @@ p {
 /* Section common */
 .section {
   padding: 50px;
-  text-align: center;
-  margin: auto;
 }
 
 .section__container {
+  text-align: center;
   max-width: 1200px;
-  background-color: var(--color-white);
+  margin: auto;
 }
 
 /* About */
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 80px 80px;
 }
 
 .major__icon {
@@ -232,6 +232,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  height: 125px;
 }
 
 .job__description {
@@ -252,9 +253,15 @@ p {
   font-size: var(--font-micro);
 }
 
-.job__logo {
+.job__logo-kb {
   height: 100px;
-  margin: 40px;
+  margin: 20px;
+}
+
+.job__logo-berjaya {
+  height: 150px;
+  margin: 20px;
+  transform: translateY(15%);
 }
 
 /* Skill */
@@ -347,8 +354,9 @@ p {
   width: 24px;
   height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -423,9 +431,6 @@ p {
 }
 
 /* Testimonial */
-#testimonials {
-  background-color: var(--color-light-white);
-}
 .testimonial {
   display: flex;
   margin: 32px 0;
@@ -447,7 +452,6 @@ p {
 
 .testimonial__speech-bubble {
   padding: 18px;
-  background-color: var(--color-light-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -565,7 +569,6 @@ p {
 
   .category__btn {
     margin: 4px 0;
-    width: 100%;
   }
 
   .project {
@@ -603,5 +606,9 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+  }
+
+  #contact {
+    padding: 20px;
   }
 }
