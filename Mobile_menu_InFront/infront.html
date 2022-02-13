@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
-    <script src="infront_main.js" alt="infront.js"></script>
     <script src="https://kit.fontawesome.com/a3f29038a9.js" crossorigin="anonymous"></script>
 </head>
 
 <div>
-
-<!-- Header -->
+    
+    <!-- Header -->
     <nav id = 'navbar'>
         <div class="inner">
             <div class="navbar__left">
-                <img src="logo_white.png" alt="logo" class="navbar__logo">
+                <img src="img/logo_white.png" alt="logo" class="navbar__logo">
             </div>
             <div class="navbar__right">
                 <div class="categories">
@@ -27,7 +26,7 @@
                     <li><div class="a">ACADEMY</div></li>
                     <li><div class="a">STORE</div></li>
                 </div>
-
+                
                 <div class="global__menu">
                     <li><div class="a">고객의 소리</div></li>
                     <li><div class="a">채용</div></li>
@@ -37,79 +36,81 @@
             </div>    
         </div>
     </nav>
-
-        <div class="main__banner">
-            <img 
-                src="	https://m.outback.co.kr/upload/mainVisual/20200309/20200309174056856002.jpg" 
-                alt="main_imgs_1">
-            <img 
-                src="https://m.outback.co.kr/upload/mainVisual/20201018/20201018230716937093.jpg" 
-                alt="main_imgs_2">
-            <img 
-                src="https://m.outback.co.kr/upload/mainVisual/20210609/20210609101119275006.jpg"
-                alt="event_menu_3">
-            <img 
-                src="https://m.outback.co.kr/upload/mainVisual/20210908/20210908101000486015.jpg"
-                alt="main_imgs_4">
-            </div>
-        </div>
-    </div>    
-
-    <section id="cf">
-        <div class="main__cf">
-            <video src=""></video>
-        </div>
-
-        <h1>BRAND CAMPAIGN INFRONT CF</h1>
-        <h3>WE ARE TEMAM INFRONT</h3>
-        <p>오직 당신을 위해 봉사하는 우리는 팀 아웃백 입니다. <br/> No Ruels, Just RIGHT.</p>
-    </section>
-
-    <section id="events">
-        <div class="slide__data">
-            <div class="events__menu">
-                <div class="event__menu">
-                    <img 
-                    src="https://m.outback.co.kr/upload/banner/20201019/20201019101227003223.jpg" 
-                    alt="event__menu">
-                    <h1>GARLIC RIBEYE</h1>
-                    <h3>갈릭 립아이</h3>
-                    <p>발사믹 소스에 조리한 마늘이 어우러진 꽃등심 스테이크 (수프 또는 샐러드 제공)</p>
-                </div>
-                <div class="event__menu">
-                <img 
-                    src="https://m.outback.co.kr/upload/banner/20190108/20190108172841915006.jpg"
-                    alt="coconut_shrimp">
-                    <h1>COCONUT SHRIMP</h1>
-                    <h3>코코넛 쉬림프</h3>
-                    <p>달콤하고 고소한 코코넛 가루를 묻혀 바삭하게 튀긴 새우요리</p>
-                </div>
-                <div class="event__menu">
-                    <img 
-                    src="https://www.outback.co.kr/upload/banner/20180627/20180627183554751017.jpg" 
-                    alt="baby_ribs">
-                    <h1>BABY RIBS</h1>
-                    <h3>베이비 립</h3>
-                    <p>부드러운 돼지갈비에 인프론트만의 특제 소스를 발라 구워낸 바베큐 요리</p>
-                </div>
-                <div class="event__menu">
-                    <img 
-                    src="	https://m.outback.co.kr/upload/banner/20180911/20180911174758487009.jpg" 
-                    alt="aussie_cheese_fries">
-                    <h1>AUSSIE CHEESE FRIES</h1>
-                    <h3>오지 치즈 후라이즈</h3>
-                    <p>두툼한 감자튀김에 체다치즈, 잭치즈를 듬뿍 녹여 베이컨을 뿌린 메뉴</p>    
-                </div>
-                <img src="https://www.outback.co.kr/asset/images/content/main_benefit_obj_01.jpg" alt="obj__1">
-                <img src="https://www.outback.co.kr/asset/images/content/main_cf_obj_02.jpg" alt="obj__2">
-            </div>
-        </div>
-    </section>
     
-    <section id="benefits">
-        <div class="main__benefit">
-            <img src="https://m.outback.co.kr/_mobile/asset/images/content/main_benefit_visual.jpg" alt="benefit__background">
-            <div class="benefit__title">
+    <!-- Main img slider -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="img/main_04.jpg" id="lastClone" alt="lasClone">
+            <img src="img/main_01.jpg" alt="main_01">
+            <img src="img/main_02.jpg" alt="main_02">
+            <img src="img/main_03.jpg" alt="main_03">
+            <img src="img/main_04.jpg" alt="main_04">
+            <img src="img/main_01.jpg" id="firstClone" alt="firstClone">
+        </div>
+    </div>
+
+<button id="prevBtn">prevBtn</button>
+<button id="nextBtn">nextBtn</button>
+
+<div class="main__banner">
+</div>
+</div>    
+
+<section id="cf">
+    <div class="main__cf">
+        <video src=""></video>
+    </div>
+    
+    <h1>BRAND CAMPAIGN INFRONT CF</h1>
+    <h3>WE ARE TEMAM INFRONT</h3>
+    <p>오직 당신을 위해 봉사하는 우리는 팀 인프런트 입니다. <br/> No Ruels, Just RIGHT.</p>
+</section>
+
+<section id="events">
+    <div class="slide__data">
+        <div class="events__menu">
+            <div class="event__menu">
+                <img 
+                src="https://m.outback.co.kr/upload/banner/20201019/20201019101227003223.jpg" 
+                alt="event__menu">
+                <h1>GARLIC RIBEYE</h1>
+                <h3>갈릭 립아이</h3>
+                <p>발사믹 소스에 조리한 마늘이 어우러진 꽃등심 스테이크 (수프 또는 샐러드 제공)</p>
+            </div>
+            <div class="event__menu">
+                <img 
+                src="https://m.outback.co.kr/upload/banner/20190108/20190108172841915006.jpg"
+                alt="coconut_shrimp">
+                <h1>COCONUT SHRIMP</h1>
+                <h3>코코넛 쉬림프</h3>
+                <p>달콤하고 고소한 코코넛 가루를 묻혀 바삭하게 튀긴 새우요리</p>
+            </div>
+            <div class="event__menu">
+                <img 
+                src="https://www.outback.co.kr/upload/banner/20180627/20180627183554751017.jpg" 
+                alt="baby_ribs">
+                <h1>BABY RIBS</h1>
+                <h3>베이비 립</h3>
+                <p>부드러운 돼지갈비에 인프론트만의 특제 소스를 발라 구워낸 바베큐 요리</p>
+            </div>
+            <div class="event__menu">
+                <img 
+                src="	https://m.outback.co.kr/upload/banner/20180911/20180911174758487009.jpg" 
+                alt="aussie_cheese_fries">
+                <h1>AUSSIE CHEESE FRIES</h1>
+                <h3>오지 치즈 후라이즈</h3>
+                <p>두툼한 감자튀김에 체다치즈, 잭치즈를 듬뿍 녹여 베이컨을 뿌린 메뉴</p>    
+            </div>
+            <img src="https://www.outback.co.kr/asset/images/content/main_benefit_obj_01.jpg" alt="obj__1">
+            <img src="https://www.outback.co.kr/asset/images/content/main_cf_obj_02.jpg" alt="obj__2">
+        </div>
+    </div>
+</section>
+
+<section id="benefits">
+    <div class="main__benefit">
+        <img src="https://m.outback.co.kr/_mobile/asset/images/content/main_benefit_visual.jpg" alt="benefit__background">
+        <div class="benefit__title">
                 <i class="fas fa-users"></i>
                 <h1>INFRONT BENEFIT</h1>
                 <p>다양한 멤버십과 제휴 할인 혜택을 누리세요</p>
@@ -130,7 +131,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="reward">
         <div class="reward__title">
             <p>BOOMERANG <em>REWARD</em></p>
@@ -163,7 +164,7 @@
             </ol>
         </div>
     </section>
-
+    
     <selection id="speed__big__menu">
         <li>
             <h2>RESERVE</h2>
@@ -181,7 +182,7 @@
             <i class="fas fa-phone-alt"></i>
         </li>
     </selection>
-
+    
     <section id="bottom__brands">
         <li>황금올리브치킨</li>
         <li>INFRONT</li>
@@ -190,7 +191,7 @@
         <li>보쌈상사</li>
         <li>kgkg</li>
     </section>
-
+    
     <footer id="footer-wrap">
         <ul class="footer__menu">
             <li>개인정보처리방침</li>
@@ -219,12 +220,13 @@
                 <p>copyright @ INFRONT BEEFSOUPCONTAINER all rights reserved.</p>
             </div>
         </div>
-
+        
         <div class="tel__request">
             <p>홈페이지 관련 문의 <em>070-0000-0000</em></p>
             <p>상담시간 : 월~금 09:00~18:00(토/일, 공휴일 휴무, 점심시간 12:00~13:30)</p>
             <p>대표번호 <em>1577-1588</em> 딜리버리 주문번호 <em>1234-4321</em></p>
         </div>
     </footer>
+    <script src="main.js" alt="main.js"></script>
 </body>
 </html>
