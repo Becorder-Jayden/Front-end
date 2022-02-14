@@ -120,42 +120,30 @@ li {
 
 /* Btn */
 .main__button {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-}
-
-#prevBtn,
-#nextBtn {
+  position: relative;
+  top: -500px;
+  display: flex;
+  justify-content: space-between;
   height: 100px;
-}
-
-#prevBtn {
-  float: left;
-  margin-left: 50px;
-}
-
-#nextBtn {
-  float: right;
-  margin-right: 50px;
 }
 
 /* cf */
 #cf {
+  max-width: 1200px;
+  margin: auto;
   position: relative;
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
 }
 
 #cf img {
   position: relative;
-  left: -200px;
+  left: -300px;
 }
 
 #cf .cf__text {
-  width: 100%;
   position: relative;
-  left: 1200px;
+  left: 750px;
   bottom: 350px;
   text-align: left;
 }
@@ -170,4 +158,33 @@ li {
 
 .cf__text p {
   font-size: 20px;
+}
+
+#cf .obj02 {
+  position: absolute;
+  top: 370px;
+  left: 1200px;
+  height: 400px;
+}
+
+#cf .obj01 {
+  position: absolute;
+  height: 400px;
+  top: 200px;
+  left: 1200px;
+}
+
+/* Events */
+.events__menu {
+  display: flex;
+  margin: auto;
+  width: 1400px;
+  border: 10px red solid;
+  overflow: hidden;
+  background-color: yellow;
+  justify-content: space-between;
+}
+
+.events__menu img {
+  margin: 100px;
 }
