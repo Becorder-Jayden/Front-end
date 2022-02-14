@@ -119,8 +119,55 @@ li {
 }
 
 /* Btn */
-button {
-  bottem: 30px;
-  height: 50px;
-  width: 100px;
+.main__button {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+#prevBtn,
+#nextBtn {
+  height: 100px;
+}
+
+#prevBtn {
+  float: left;
+  margin-left: 50px;
+}
+
+#nextBtn {
+  float: right;
+  margin-right: 50px;
+}
+
+/* cf */
+#cf {
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+}
+
+#cf img {
+  position: relative;
+  left: -200px;
+}
+
+#cf .cf__text {
+  width: 100%;
+  position: relative;
+  left: 1200px;
+  bottom: 350px;
+  text-align: left;
+}
+
+.cf__text h1 {
+  font-size: 50px;
+}
+
+.cf__text h3 {
+  font-size: 30px;
+}
+
+.cf__text p {
+  font-size: 20px;
 }
