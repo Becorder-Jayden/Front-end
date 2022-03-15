@@ -188,3 +188,34 @@ li {
 .events__menu img {
   margin: 100px;
 }
+
+/* Benefit */
+.main__benefit {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 200px;
+  height: 520px;
+  background-image: url(img/benefit.jpg);
+}
+
+.benefit__text {
+  position: relative;
+  top: 100px;
+  color: white;
+}
+
+.benefit__title {
+  font-size: var(--font-medium);
+}
+
+.benefits {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.benefits i {
+  height: 20px;
+  color: red;
+}

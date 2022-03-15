@@ -42,7 +42,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -157,7 +157,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background.png");
+  background: url('imgs/home-background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -427,7 +427,7 @@ p {
 }
 
 .project__description:after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   left: 50%;
